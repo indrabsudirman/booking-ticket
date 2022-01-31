@@ -33,7 +33,7 @@ func main() {
 
 			bookTicket(userTickets, firstName, lastName, email)
 
-			sendTicket(userTickets, firstName, lastName, email)
+			go sendTicket(userTickets, firstName, lastName, email)
 
 			// call function print first name
 			firstNames := getFirstNames()
